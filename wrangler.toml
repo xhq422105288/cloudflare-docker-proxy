@@ -1,5 +1,9 @@
 name = "cloudflare-docker-proxy"
+main = "src/index.ts"
 compatibility_date = "2023-12-01"
+
+[assets]
+directory = "./dist"
 
 [dev]
 ip = "0.0.0.0"
