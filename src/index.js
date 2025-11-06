@@ -7,17 +7,17 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  ["docker." + CUSTOM_DOMAIN]: dockerHub,
-  ["quay." + CUSTOM_DOMAIN]: "https://quay.io",
-  ["gcr." + CUSTOM_DOMAIN]: "https://gcr.io",
-  ["k8s-gcr." + CUSTOM_DOMAIN]: "https://k8s.gcr.io",
-  ["k8s." + CUSTOM_DOMAIN]: "https://registry.k8s.io",
-  ["ghcr." + CUSTOM_DOMAIN]: "https://ghcr.io",
-  ["cloudsmith." + CUSTOM_DOMAIN]: "https://docker.cloudsmith.io",
-  ["ecr." + CUSTOM_DOMAIN]: "https://public.ecr.aws",
+  ["docker." + "huaqingxu.dpdns.org"]: dockerHub,
+  ["quay." + "huaqingxu.dpdns.org"]: "https://quay.io",
+  ["gcr." + "huaqingxu.dpdns.org"]: "https://gcr.io",
+  ["k8s-gcr." + "huaqingxu.dpdns.org"]: "https://k8s.gcr.io",
+  ["k8s." + "huaqingxu.dpdns.org"]: "https://registry.k8s.io",
+  ["ghcr." + "huaqingxu.dpdns.org"]: "https://ghcr.io",
+  ["cloudsmith." + "huaqingxu.dpdns.org"]: "https://docker.cloudsmith.io",
+  ["ecr." + "huaqingxu.dpdns.org"]: "https://public.ecr.aws",
 
   // staging
-  ["docker-staging." + CUSTOM_DOMAIN]: dockerHub,
+  ["docker-staging." + "huaqingxu.dpdns.org"]: dockerHub,
 };
 
 function routeByHosts(host) {
