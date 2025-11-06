@@ -12,6 +12,9 @@ local_protocol = "http"
 
 [vars]
 CUSTOM_DOMAIN = "huaqingxu.dpdns.org"
+DEFAULT_UPSTREAM = "https://mirror.gcr.io"
+ALLOW_DIRECT = "true"
+CACHE_TTL = "3600"
 
 [env.vars]
 CUSTOM_DOMAIN = "huaqingxu.dpdns.org"
