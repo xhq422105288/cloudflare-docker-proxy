@@ -2,6 +2,20 @@ name = "cloudflare-docker-proxy"
 main = "src/index.js"
 compatibility_date = "2023-12-01"
 
+# 部署到 Workers （无需 Pages）
+workers_dev = false
+
+# 自定义域名（Cloudflare 中绑定 docker.huaqingxu.dpdns.org）
+routes = [
+   { pattern = "docker.huaqingxu.dpdns.org", custom_domain = true },
+   { pattern = "quay.huaqingxu.dpdns.org", custom_domain = true },
+   { pattern = "gcr.huaqingxu.dpdns.org", custom_domain = true },
+   { pattern = "k8s-gcr.huaqingxu.dpdns.org", custom_domain = true },
+   { pattern = "k8s.huaqingxu.dpdns.org", custom_domain = true },
+   { pattern = "ghcr.huaqingxu.dpdns.org", custom_domain = true },
+   { pattern = "cloudsmith.huaqingxu.dpdns.org", custom_domain = true },
+]
+
 [assets]
 directory = "./dist"
 
